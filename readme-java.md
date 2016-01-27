@@ -17,6 +17,7 @@
 
 ## 并发编程
 - [java.util.concurrent - Java Concurrency Utilities](http://tutorials.jenkov.com/java-util-concurrent/index.html)
+- [IBM - Java 多线程与并发编程专题](http://www.ibm.com/developerworks/cn/java/j-concurrent/)
 
 ## Java8 学习
 - [Java Platform, Standard Edition (Java SE) 8 Documentation](http://docs.oracle.com/javase/8/)
@@ -24,6 +25,7 @@
 ## Java9 前沿
 - [5 个 java 9 新特性](http://www.importnew.com/16280.html)
 
+彩蛋[Why we dropped Eclipse in favour of IntelliJ](https://plumbr.eu/blog/java/why-we-dropped-eclipse-in-favour-of-intellij)
 
 # JVM 虚拟机
 
@@ -42,3 +44,6 @@
 	- [Java HotSpot Garbage Collection Whiterpapers](http://www.oracle.com/technetwork/articles/java/index-jsp-140228.html) 包括内存管理、收集器技术、收集Tuning、常见错误解决方法、G1 介绍等。
 
 jvm 的测试代码及一些参考资料见[目录jvm](jvm/)
+
+# 测试及监察
+- [常用 Java 静态代码分析工具的分析与比较 - Checkstyle,FindBugs,PMD,Jtest](https://www.ibm.com/developerworks/cn/java/j-lo-statictest-tools/)
