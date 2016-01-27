@@ -47,7 +47,7 @@
 - [更多内容 …… ](readme-arch.md)
 
 # 四、大型互联网技术架构分享
-
+- [追求极致-从技术细节看美团架构](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=402465951&idx=1&sn=c76193b13b506d2c631bac8840a0f5b6&scene=1&srcid=012731CIWuUoX1w8bGv2THHJ#rd) 讲述美团作为电商网站的技术架构发展历程，没有最好的架构，只有不断优化。
 - [挖财技术体系架构以及 Scala 在挖财的实践](http://www.infoq.com/cn/articles/scala-architecture-wacai) 后端技术用的主要是比较大众的东西，Web 容器用 Tomcat，框架主要是 Spring MVC，也有少量的 Play，中间服务层是 Dubbo，微容器用Spring Boot，服务注册这一块是用 ZooKeeper，核心业务开发方式还是围绕着 Spring 和 Mybatis 等；数据的存储这块是 MySQL 和 Hbase，分布存储这块是用阿里巴巴之前开源的一个中间件 Cobar。消息和实时计算这块主要是 Kafka, Storm，日志以及监控系统则是用典型的ELK和Zabbix。（对于中小型的公司来讲有借鉴意义）
 - [更多内容 …… ](readme-arch.md)
 
