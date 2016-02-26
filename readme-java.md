@@ -21,6 +21,7 @@
 
 ## Java8 学习
 - [Java Platform, Standard Edition (Java SE) 8 Documentation](http://docs.oracle.com/javase/8/)
+- [Java 8 特性 – 终极手册. 并发编程网](http://ifeve.com/java-8-features-tutorial/)
 
 ## Java9 前沿
 - [5 个 java 9 新特性](http://www.importnew.com/16280.html)
