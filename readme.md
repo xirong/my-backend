@@ -40,10 +40,18 @@
 - [鸟哥的Linux私房菜.基础学习篇（第三版）](http://book.douban.com/subject/4889838/)
 - [更多内容 …… ](readme-linux.md)
 
+## 2.5 Linux 监控
+- [Linux 性能监测专题 - LinuxCn](https://linux.cn/topic-linux-system-performance-monitoring.html) 列举了包括 CPU、Memory、IO、Network 等许多基础组件的监控，以及进程、性能等。
+- [更多内容 …… ](readme-linux.md)
+
 # 三、分布式系统
 
 - [分布式系统的特点以及设计理念](http://www.infoq.com/cn/articles/features-and-design-concept-of-distributed-system) 通过网络松耦合、对机器硬件要求低、强调横向扩展、不允许单点失效、尽可能减少节点网络开销、服务无状态等特点的介绍。
 - [book-Designing Data-Intensive Applications](http://dataintensive.net/) 评价很高
+- [关于 CAP 理论的深度剖析](http://mp.weixin.qq.com/s?__biz=MzA4Nzg5Nzc5OA==&mid=2651660931&idx=1&sn=93cccfdcc5a474e92ffd673e7cd115ce#rd)
+    - **一致性（C）**：在分布式系统中的所有数据备份，在同一时刻是否同样的值。（等同于所有节点访问同一份最新的数据副本）
+    - **可用性（A）**：在集群中一部分节点故障后，集群整体是否还能响应客户端的读写请求。（对数据更新具备高可用性）
+    - **分区容忍性（P）**：以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在C和A之间做出选择。
 - [更多内容 …… ](readme-arch.md)
 
 # 四、大型互联网技术架构分享
@@ -71,7 +79,7 @@
 - [更多内容 …… ](readme-python.md)
 
 ## 5.2 Docker
-- ……
+- [Docker学习路线图](https://yq.aliyun.com/articles/40494?spm=5176.100239.blogcont55847.15.igsKgo) 循序渐进学习，包含阿里云容器的一些资料。
 
 ## 5.3 负载均衡
 - [Nginx 引入线程池 性能提升9倍](https://yq.aliyun.com/articles/26635?&utm_campaign=sys&utm_medium=market&utm_source=edm_email&msctype=email&mscmsgid=117816050400243403&)
