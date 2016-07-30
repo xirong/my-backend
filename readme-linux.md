@@ -29,3 +29,6 @@
 # Linux 图书
 - [Linux系统架构与目录解析](http://book.douban.com/subject/3592797/)
 - [鸟哥的Linux私房菜.基础学习篇（第三版）](http://book.douban.com/subject/4889838/)
+
+# Linux 监控
+- [Linux 性能监测专题 - LinuxCn](https://linux.cn/topic-linux-system-performance-monitoring.html) 列举了包括 CPU、Memory、IO、Network 等许多基础组件的监控，以及进程、性能等。
