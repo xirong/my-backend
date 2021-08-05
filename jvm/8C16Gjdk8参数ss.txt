@@ -1,0 +1,16 @@
+经过heapdump社区（perfma）调优后参数：https://opts.console.heapdump.cn/result/optimize/kvlzP
+
+
+-Xmx10880M -Xms10880M -Xss256K -XX:MaxMetaspaceSize=512M -XX:MetaspaceSize=512M -XX:MaxDirectMemorySize=1g
+
+-XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:+ParallelRefProcEnabled 
+
+-XX:+UnlockDiagnosticVMOptions -Dsun.misc.URLClassPath.disableJarChecking=true -Dfile.encoding=UTF8  -XX:+PrintCommandLineFlags -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCApplicationConcurrentTime -XX:+PrintSafepointStatistics -XX:PrintSafepointStatisticsCount=1 -XX:+PrintTenuringDistribution -XX:-DisplayVMOutput -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=../nlogs -Xloggc:gc.2021-07-20T20_40.log 
+
+
+
+
+原2C4G线上参数：
+/mnt/jdk8/bin/java -Dsun.misc.URLClassPath.disableJarChecking=true -Dfile.encoding=UTF8 -Xms2g -Xmx2g -Xmn1g -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=512m -Xss256K -XX:SurvivorRatio=8 -XX:MaxDirectMemorySize=1g -XX:+UseConcMarkSweepGC -XX:+ExplicitGCInvokesConcurrent -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=75 -XX:+CMSScavengeBeforeRemark -XX:+PrintPromotionFailure -XX:+PrintCommandLineFlags -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCApplicationConcurrentTime -XX:+PrintSafepointStatistics -XX:PrintSafepointStatisticsCount=1 -XX:+PrintTenuringDistribution -XX:+UnlockDiagnosticVMOptions -XX:+LogVMOutput -XX:-DisplayVMOutput -XX:LogFile=/mnt/iss/service/price-service/webapp/../nlogs/vm.2021-07-13T19_11.log -Ddubbo.application.qos.accept.foreign.ip=false -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+HeapDumpOnOutOfMemoryError 
+
+-Xloggc:/nlogs/gc.2021-07-13T19_11.log -XX:HeapDumpPath=/nlogs -DlogHome=/nlogs

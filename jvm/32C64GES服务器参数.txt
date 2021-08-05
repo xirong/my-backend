@@ -1,0 +1,42 @@
+订单 business es 集群 ，4台 32C64G 1T固态SSD存储  服务器，默认JVM参数如下：
+-Xms32g
+-Xmx32g
+-XX:+UnlockDiagnosticVMOptions
+-XX:+UseCompressedOops
+-XX:+UseG1GC
+-XX:MaxGCPauseMillis=200
+-XX:G1ReservePercent=20
+-XX:+G1SummarizeConcMark
+-XX:InitiatingHeapOccupancyPercent=40
+-XX:+DisableExplicitGC
+-XX:+AlwaysPreTouch
+-server
+-Xss512k
+-Djava.awt.headless=true
+-Dfile.encoding=UTF-8
+-Djna.nosys=true
+-Djdk.io.permissionsUseCanonicalPath=true
+-Dio.netty.noUnsafe=true
+-Dio.netty.noKeySetOptimization=true
+-Dio.netty.recycler.maxCapacityPerThread=0
+-Dlog4j.shutdownHookEnabled=false
+-Dlog4j2.disable.jmx=true
+-Dlog4j.skipJansi=true
+-XX:+HeapDumpOnOutOfMemoryError
+
+
+经过 heapdump.cn 社区优化后，参数如下：
+*****************************************************************************************************************************
+*****************************************************************************************************************************
+-server -Xmx43648M -Xms43648M -Xss256K -XX:MaxMetaspaceSize=512M -XX:MetaspaceSize=512M 
+
+-XX:+UseG1GC -XX:+UnlockDiagnosticVMOptions
+-XX:MaxGCPauseMillis=200 -XX:G1ReservePercent=20 -XX:+G1SummarizeConcMark -XX:InitiatingHeapOccupancyPercent=40 -XX:+DisableExplicitGC 
+
+
+-Djava.awt.headless=true -Dfile.encoding=UTF-8 
+-Djna.nosys=true -Djdk.io.permissionsUseCanonicalPath=true -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j.skipJansi=true 
+
+
+
+-XX:+AlwaysPreTouch -XX:+HeapDumpOnOutOfMemoryError -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+PrintGCDetails 

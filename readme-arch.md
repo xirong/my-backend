@@ -10,6 +10,11 @@
     - **一致性（C）**：在分布式系统中的所有数据备份，在同一时刻是否同样的值。（等同于所有节点访问同一份最新的数据副本）
     - **可用性（A）**：在集群中一部分节点故障后，集群整体是否还能响应客户端的读写请求。（对数据更新具备高可用性）
     - **分区容忍性（P）**：以实际效果而言，分区相当于对通信的时限要求。系统如果不能在时限内达成数据一致性，就意味着发生了分区的情况，必须就当前操作在C和A之间做出选择。
+- [互联网分布式事务-coolshell](http://coolshell.cn/articles/10910.html)
+- 分布式系统下全局 ID 生成方法
+    - [MongoDB文档（Document）全局唯一ID的设计思路](http://blog.nosqlfan.com/html/3511.html) 类似于 twitter 的开源算法 `snowflake` 
+    - [58沈剑细聊分布式ID生成方法](http://www.ita1024.com/eventlist/view/id/67) 数据库的 auto_increment 、单点批量ID生成服务、uuid、取当前毫秒数、类snowflake算法 各类的优缺点。
+- [Dapper，大规模分布式系统的跟踪系统 -google](http://bigbully.github.io/Dapper-translation/) 类似于阿里的鹰眼(Egaleye)，google 原版论文[Dapper, a Large-Scale Distributed Systems Tracing Infrastructure](http://research.google.com/pubs/pub36356.html)，类似于 Twitter 的[Distributed Systems Tracing with Zipkin](https://blog.twitter.com/2012/distributed-systems-tracing-with-zipkin)
 
 ## 二、技术架构分享
 - [Stack Overflow: The Architecture - 2016 Edition](http://nickcraver.com/blog/2016/02/17/stack-overflow-the-architecture-2016-edition/) stack Overflow最新版的架构设计

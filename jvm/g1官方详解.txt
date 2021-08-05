@@ -1,0 +1,1 @@
+oracle 官网 g1 地址：https://docs.oracle.com/javase/9/gctuning/garbage-first-garbage-collector.htm#JSGCT-GUID-082C967F-2DAC-4B59-8A81-0CEC6EEB9016
